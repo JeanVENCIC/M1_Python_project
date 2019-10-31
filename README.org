@@ -1,18 +1,18 @@
-*Projet de M1 : Abondance et Stickiness
+* Projet de M1 : Abondance et Stickiness
 
 Projet réalisé par Pierre CHARPENTIER Jean VENCIC.
 
 Projet réalisé dans le cadre de l'UE Python du Master 1 BIBS de Paris-Saclay.
 
 
-*Objectif
+* Objectif
 
 L'objectif du projet à été d'étudier la corrélation entre l’abondance des protéines de S. cerevisiae et la stickiness de leurs surfaces. Pour cela, le sujet à été divisé en 2 parties :
 
-**Partie 1 : Analyse
+** Partie 1 : Analyse
 
 Dans cette partie, il a fallu à partir d'un fichier contenant l'abondance des protéines de S. cerevisiae, extraire toutes les protéines dont la structure 3D étaient résolue et disponible sur Uniprot au format PDB. Ensuite après un téléchargement local automatisé des strcutrues 3D au format PDB, les acides aminés de surface ont été déterminés par méthode de calcul de la variance circulaire des atomes. Enfin la stickiness des acides aminés de surface a été étudiée globalement sur les 1075 protéines retenues et tout particulièrement en comparaison avec l'abondance de ces protéines dans le cytosol de S. cerevisae.
 
-**Partie 2 : Prédiction
+** Partie 2 : Prédiction
 
 Dans cette partie, nous avons cherché à déterminer les "patchs" de résidus à haute stickiness parmi les résidus de surface des protéines sous l'hypothèse que ces patchs de résidus seraient de potentiels sites d'interaction non-fonctionnelle. Pour ce faire, une méthode a été mis en place pour regrouper les résidus de surface à haute stickiness. Cette méthode simple est paramétrable en nombre maximal de patchs, en seuil de stickiness correspondant à une "haute stickiness" et en seuil de distance entre deux résidus d'un même patch.
